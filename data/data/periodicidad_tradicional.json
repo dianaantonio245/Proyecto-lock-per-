@@ -1,0 +1,9 @@
+[
+  {"entrega":"Mensual","factor":1},
+  {"entrega":"Bimestral","factor":1.5},
+  {"entrega":"Trimestral","factor":1.75},
+  {"entrega":"Cuatrimestral","factor":2.25},
+  {"entrega":"Semestral","factor":3},
+  {"entrega":"1 Año","factor":6},
+  {"entrega":"2 Años","factor":9.6}
+]
