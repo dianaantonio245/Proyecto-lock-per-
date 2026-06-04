@@ -1,33 +1,474 @@
 [
   {
-    "categoria":"Aceites"
+    "categoria": "Categoria",
+    "LEVANTAMIENTO DE CAMPO": "Llave",
+    "FILTROS_TR": "Servicios",
+    "FACTOR_CIUDAD": "CIUDAD",
+    "LISTADO COMERCIAL": "ID",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Servicio Campo"
   },
   {
-    "categoria":"Aceites Envasados",
-    "Exhibicion Lima":16,
-    "Exhibicion Provincias":20
+    "categoria": "Aceites",
+    "LEVANTAMIENTO DE CAMPO": "ACEITESAudit Consumo",
+    "FILTROS_TR": "Audit Consumo",
+    "FACTOR_CIUDAD": "LIMA",
+    "LISTADO COMERCIAL": 1000163.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
   },
   {
-    "categoria":"Aceites Industriales",
-    "Exhibicion Lima":16,
-    "Exhibicion Provincias":20
+    "categoria": "Aceites Envasados",
+    "LEVANTAMIENTO DE CAMPO": "BOCADITOSAudit Consumo",
+    "FILTROS_TR": "Audit Insumos",
+    "FACTOR_CIUDAD": "AREQUIPA",
+    "LISTADO COMERCIAL": 1000164.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
   },
   {
-    "categoria":"Aguas",
-    "Audit Consumo":5.4,
-    "Chequeo":5.188345,
-    "Exhibicion Lima":15.695133
+    "categoria": "Aceites Industriales",
+    "LEVANTAMIENTO DE CAMPO": "BOCADITOSAudit Consumo",
+    "FILTROS_TR": "Chequeo",
+    "FACTOR_CIUDAD": "AYACUCHO",
+    "LISTADO COMERCIAL": 1000169.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
   },
   {
-    "categoria":"Alimentos Infantiles"
+    "categoria": "Aguas",
+    "LEVANTAMIENTO DE CAMPO": "CAFÉ Y SUCEDÁNEOSAudit Consumo",
+    "FILTROS_TR": "EXHIBICIÓN",
+    "FACTOR_CIUDAD": "CAJAMARCA",
+    "LISTADO COMERCIAL": 1000171.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
   },
   {
-    "categoria":"Arroz"
+    "categoria": "Alimentos Infantiles",
+    "LEVANTAMIENTO DE CAMPO": "CEREALESAudit Consumo",
+    "FILTROS_TR": "Check",
+    "FACTOR_CIUDAD": "CHICLAYO",
+    "LISTADO COMERCIAL": 1000173.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
   },
   {
-    "categoria":"Bebibles"
+    "categoria": "Arroz",
+    "LEVANTAMIENTO DE CAMPO": "CHOCOLATESAudit Consumo",
+    "FILTROS_TR": "Chequeo Insumos",
+    "FACTOR_CIUDAD": "CHIMBOTE",
+    "LISTADO COMERCIAL": 1000174.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
   },
   {
-    "categoria":"Bocaditos"
+    "categoria": "Bebibles",
+    "LEVANTAMIENTO DE CAMPO": "CONGELADOSAudit Consumo",
+    "FILTROS_TR": "Back Data Audit Consumo",
+    "FACTOR_CIUDAD": "CUSCO",
+    "LISTADO COMERCIAL": 16780.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Bebibles",
+    "LEVANTAMIENTO DE CAMPO": "HAIR CAREAudit Consumo",
+    "FILTROS_TR": "Back Data Audit Insumos",
+    "FACTOR_CIUDAD": "HUANCAYO",
+    "LISTADO COMERCIAL": 1000176.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Bocaditos",
+    "LEVANTAMIENTO DE CAMPO": "HAIR CAREAudit Consumo",
+    "FACTOR_CIUDAD": "HUANUCO",
+    "LISTADO COMERCIAL": 1000177.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Café y Sucedáneos",
+    "LEVANTAMIENTO DE CAMPO": "DESODORANTESAudit Consumo",
+    "FACTOR_CIUDAD": "ICA",
+    "LISTADO COMERCIAL": 1000178.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Caldos",
+    "LEVANTAMIENTO DE CAMPO": "DETERGENTESAudit Consumo",
+    "FACTOR_CIUDAD": "IQUITOS",
+    "LISTADO COMERCIAL": 1000179.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Caldos Y Sazonadores",
+    "LEVANTAMIENTO DE CAMPO": "EMBUTIDOSAudit Consumo",
+    "FACTOR_CIUDAD": "NORTE CHICO",
+    "LISTADO COMERCIAL": 1000181.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Carne de Pollo",
+    "LEVANTAMIENTO DE CAMPO": "FIDEOSAudit Consumo",
+    "FACTOR_CIUDAD": "PIURA",
+    "LISTADO COMERCIAL": 57188.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Cereales",
+    "LEVANTAMIENTO DE CAMPO": "GALLETASAudit Consumo",
+    "FACTOR_CIUDAD": "PUCALLPA",
+    "LISTADO COMERCIAL": 1000196.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Chocolates",
+    "LEVANTAMIENTO DE CAMPO": "GOLOSINASAudit Consumo",
+    "FACTOR_CIUDAD": "SUR CHICO",
+    "LISTADO COMERCIAL": 1000165.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Coberturas Y Chispas De Chocolate",
+    "LEVANTAMIENTO DE CAMPO": "HUEVOSAudit Consumo",
+    "FACTOR_CIUDAD": "TACNA",
+    "LISTADO COMERCIAL": 1000186.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "COMIDAS INSTANTANEAS",
+    "LEVANTAMIENTO DE CAMPO": "JABÓN DE LAVARAudit Consumo",
+    "FACTOR_CIUDAD": "TARAPOTO",
+    "LISTADO COMERCIAL": 77424.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Congelados",
+    "LEVANTAMIENTO DE CAMPO": "LECHESAudit Consumo",
+    "FACTOR_CIUDAD": "TRUJILLO",
+    "LISTADO COMERCIAL": 77441.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Conservas",
+    "LEVANTAMIENTO DE CAMPO": "MARGARINAS Y MANTEQUILLASAudit Consumo",
+    "FACTOR_CIUDAD": "PUNO",
+    "LISTADO COMERCIAL": 77471.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Conservas de Pescado",
+    "LEVANTAMIENTO DE CAMPO": "PETFOODAudit Consumo",
+    "FACTOR_CIUDAD": "JULIACA",
+    "LISTADO COMERCIAL": 1000188.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Crema de Chantilly",
+    "LEVANTAMIENTO DE CAMPO": "QUESOSAudit Consumo",
+    "FACTOR_CIUDAD": "SUR CHICO (AUDIT)",
+    "LISTADO COMERCIAL": 77683.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Dentales",
+    "LEVANTAMIENTO DE CAMPO": "QUITAMANCHASAudit Consumo",
+    "FACTOR_CIUDAD": "SULLANA",
+    "LISTADO COMERCIAL": 1000192.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Desodorantes",
+    "LEVANTAMIENTO DE CAMPO": "SALSAS FRÍASAudit Consumo",
+    "FACTOR_CIUDAD": "TUMBES",
+    "LISTADO COMERCIAL": 1000194.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Detergentes",
+    "LEVANTAMIENTO DE CAMPO": "SUAVIZANTESAudit Consumo",
+    "FACTOR_CIUDAD": "MOQUEGUA",
+    "LISTADO COMERCIAL": 1000018.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Detergentes Adic",
+    "LEVANTAMIENTO DE CAMPO": "YOGURTAudit Consumo",
+    "FACTOR_CIUDAD": "PAITA",
+    "LISTADO COMERCIAL": 1000225.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Embutidos",
+    "LEVANTAMIENTO DE CAMPO": "ACEITES INDUSTRIALESAudit Insumos",
+    "LISTADO COMERCIAL": 1000195.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Encuesta Bodegas",
+    "LEVANTAMIENTO DE CAMPO": "CARNE DE POLLOAudit Insumos",
+    "FACTOR_CIUDAD": "TODAS",
+    "LISTADO COMERCIAL": 1000207.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Energizantes",
+    "LEVANTAMIENTO DE CAMPO": "COBERTURAS Y CHISPAS DE CHOCOLATEAudit Insumos",
+    "LISTADO COMERCIAL": 1000240.0,
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Fideos",
+    "LEVANTAMIENTO DE CAMPO": "DETERGENTESAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "FS-PREGUNTAS VARIAS BONIF",
+    "LEVANTAMIENTO DE CAMPO": "FS-PREGUNTAS VARIAS BONIFAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Fudge",
+    "LEVANTAMIENTO DE CAMPO": "HARINAS INDUSTRIALESAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Galletas",
+    "LEVANTAMIENTO DE CAMPO": "LIMPIADORESAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Gaseosas",
+    "LEVANTAMIENTO DE CAMPO": "MANJAR BLANCOAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Golosinas",
+    "LEVANTAMIENTO DE CAMPO": "MANTECAS INDUSTRIALESAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Hair Care",
+    "LEVANTAMIENTO DE CAMPO": "MARGARINAS INDUSTRIALESAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Harinas Industriales",
+    "LEVANTAMIENTO DE CAMPO": "PANI-PREGUNTAS VARIAS BONIFAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
+  },
+  {
+    "categoria": "Helados",
+    "LEVANTAMIENTO DE CAMPO": "PREMEZCLASAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Audit Consumo"
+  },
+  {
+    "categoria": "Huevos",
+    "LEVANTAMIENTO DE CAMPO": "SALSAS FRÍAS INDUSTRIALESAudit Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Insecticidas",
+    "LEVANTAMIENTO DE CAMPO": "ALICORP-LIMA +9Check",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Isotonicas",
+    "LEVANTAMIENTO DE CAMPO": "Varios SKUS BodegasCheck",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Jabón de Lavar",
+    "LEVANTAMIENTO DE CAMPO": "Varios SKUS Puestos de MercadoCheck",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Jabón de Tocador",
+    "LEVANTAMIENTO DE CAMPO": "CONSERVASChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Jugos Y Néctar",
+    "LEVANTAMIENTO DE CAMPO": "DENTALESChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Lavavajillas",
+    "LEVANTAMIENTO DE CAMPO": "JABÓN DE TOCADORChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Leche Condensada",
+    "LEVANTAMIENTO DE CAMPO": "LAVAVAJILLASChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Leches",
+    "LEVANTAMIENTO DE CAMPO": "LEJÍASChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Leches Condensadas",
+    "LEVANTAMIENTO DE CAMPO": "LIMPIADORESChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Leches Culinarias",
+    "LEVANTAMIENTO DE CAMPO": "MARGARINAS Y MANTEQUILLASChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
+  },
+  {
+    "categoria": "Leches Evaporadas + Polvo",
+    "LEVANTAMIENTO DE CAMPO": "POSTRESChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Audit Insumo"
+  },
+  {
+    "categoria": "Lejías",
+    "LEVANTAMIENTO DE CAMPO": "COBERTURAS Y CHISPAS DE CHOCOLATEChequeo Insumos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Limpiadores",
+    "LEVANTAMIENTO DE CAMPO": "ENCUESTA BODEGASEncuesta",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo Insumos"
+  },
+  {
+    "categoria": "Manjar Blanco",
+    "LEVANTAMIENTO DE CAMPO": "AGUASAudit Consumo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Mantecas Industriales",
+    "LEVANTAMIENTO DE CAMPO": "BEBIBLESAudit Consumo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Maquinas de Afeitar + Repuestos",
+    "LEVANTAMIENTO DE CAMPO": "DETERGENTES ADICAudit Consumo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Margarinas Industriales",
+    "LEVANTAMIENTO DE CAMPO": "CAFÉ Y SUCEDÁNEOSExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Margarinas y Mantequillas",
+    "LEVANTAMIENTO DE CAMPO": "CEREALESExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Mayonesas",
+    "LEVANTAMIENTO DE CAMPO": "CHOCOLATESExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Mermelada",
+    "LEVANTAMIENTO DE CAMPO": "HELADOSExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Mermeladas",
+    "LEVANTAMIENTO DE CAMPO": "LECHESExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Modificadores",
+    "LEVANTAMIENTO DE CAMPO": "MODIFICADORES Y COCOASExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Modificadores Y Cocoas",
+    "LEVANTAMIENTO DE CAMPO": "CAFÉ Y SUCEDÁNEOSExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Panes Industriales (inc Tostadas y Rapiditas)",
+    "LEVANTAMIENTO DE CAMPO": "CEREALESExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Panetones",
+    "LEVANTAMIENTO DE CAMPO": "CHOCOLATESExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "PANI-PREGUNTAS VARIAS BONIF",
+    "LEVANTAMIENTO DE CAMPO": "HELADOSExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Pañal Bebes",
+    "LEVANTAMIENTO DE CAMPO": "LECHESExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Papel Higienico",
+    "LEVANTAMIENTO DE CAMPO": "MODIFICADORES Y COCOASExhibición Lima",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Papel Toalla",
+    "LEVANTAMIENTO DE CAMPO": "COMIDAS INSTANTANEASChequeo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Petfood",
+    "LEVANTAMIENTO DE CAMPO": "GOLOSINASCheck",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Chequeo de Dist. & Precio"
+  },
+  {
+    "categoria": "Postres",
+    "LEVANTAMIENTO DE CAMPO": "ALICORP-LIMA +6Check",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Check"
+  },
+  {
+    "categoria": "Premezclas",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Check"
+  },
+  {
+    "categoria": "Proteccion Femenina",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Check"
+  },
+  {
+    "categoria": "Quesos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
+  },
+  {
+    "categoria": "Quitamanchas",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
+  },
+  {
+    "categoria": "Refrescos",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
+  },
+  {
+    "categoria": "Refrescos en Polvo",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
+  },
+  {
+    "categoria": "Ron y Pisco",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
+  },
+  {
+    "categoria": "Rtd",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
+  },
+  {
+    "categoria": "Sal",
+    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Exhibición (Share of Shelf)"
+  },
+  {
+    "categoria": "Salsas Frías"
+  },
+  {
+    "categoria": "Salsas Frías Industriales"
+  },
+  {
+    "categoria": "Shampoo"
+  },
+  {
+    "categoria": "Suavizantes"
+  },
+  {
+    "categoria": "Varios Skus Bodegas"
+  },
+  {
+    "categoria": "Varios Skus Puestos De Mercado"
+  },
+  {
+    "categoria": "Yogurt"
   }
 ]
