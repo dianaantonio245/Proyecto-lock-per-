@@ -1,0 +1,34 @@
+[
+  {
+    "periodicidad": "Mensual",
+    "factor": 1
+  },
+  {
+    "periodicidad": "Bimestral",
+    "factor": 1.5
+  },
+  {
+    "periodicidad": "Trimestral",
+    "factor": 1.75
+  },
+  {
+    "periodicidad": "Cuatrimestral",
+    "factor": 2.25
+  },
+  {
+    "periodicidad": "Semestral",
+    "factor": 3
+  },
+  {
+    "periodicidad": "Anual",
+    "factor": 3.5
+  },
+  {
+    "periodicidad": "1 Año",
+    "factor": 6
+  },
+  {
+    "periodicidad": "2 Años",
+    "factor": 9.6
+  }
+]
