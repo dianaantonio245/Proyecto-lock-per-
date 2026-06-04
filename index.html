@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LOCK Cotizaciones</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f4f6f9;
+color:#1a1a1a;
+}
+
+/* LOGIN */
+
+#login-screen{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#0F2544;
+}
+
+.login-card{
+background:white;
+padding:40px;
+border-radius:20px;
+width:100%;
+max-width:420px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,.15);
+}
+
+.logo{
+width:220px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:24px;
+margin-bottom:10px;
+color:#0F2544;
+}
+
+.subtitle{
+color:#6b7280;
+margin-bottom:25px;
+font-size:14px;
+}
+
+input{
+width:100%;
+padding:12px;
+border:1px solid #d1d5db;
+border-radius:10px;
+margin-bottom:15px;
+font-size:14px;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#0F2544;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+button:hover{
+opacity:.9;
+}
+
+.error{
+color:#dc2626;
+font-size:13px;
+margin-top:10px;
+display:none;
+}
+
+/* APP */
+
+#app{
+display:none;
+}
+
+.topbar{
+height:70px;
+background:#0F2544;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 25px;
+color:white;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.brand img{
+height:40px;
+}
+
+.user{
+background:rgba(255,255,255,.15);
+padding:8px 14px;
+border-radius:999px;
+font-size:13px;
+}
+
+.main{
+padding:30px;
+}
+
+.welcome{
+background:white;
+padding:30px;
+border-radius:15px;
+border:1px solid #e5e7eb;
+}
+
+.welcome h2{
+margin-bottom:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div id="login-screen">
+
+<div class="login-card">
+
+<img
+src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg"
+class="logo"
+id="logoLock">
+
+<h1>LOCK Cotizaciones</h1>
+
+<p class="subtitle">
+Ingresa tu correo corporativo
+</p>
+
+<input
+type="email"
+id="email"
+placeholder="nombre@dichter-neira.com">
+
+<button onclick="login()">
+Ingresar
+</button>
+
+<div class="error" id="error">
+Solo se permiten correos @dichter-neira.com
+</div>
+
+</div>
+
+</div>
+
+<!-- APP -->
+
+<div id="app">
+
+<div class="topbar">
+
+<div class="brand">
+
+<div>
+<h3>LOCK</h3>
+<small>by dichter & neira</small>
+</div>
+
+</div>
+
+<div class="user" id="userName">
+Usuario
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="welcome">
+
+<h2>
+Bienvenido al Sistema de Cotizaciones
+</h2>
+
+<p>
+La aplicación está funcionando correctamente.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+const email =
+document
+.getElementById("email")
+.value
+.trim()
+.toLowerCase();
+
+if(
+!email.endsWith(
+"@dichter-neira.com"
+)
+){
+document
+.getElementById("error")
+.style.display="block";
+return;
+}
+
+localStorage.setItem(
+"dn-user",
+email
+);
+
+showApp();
+
+}
+
+function showApp(){
+
+const email =
+localStorage.getItem(
+"dn-user"
+);
+
+if(!email){
+return;
+}
+
+document
+.getElementById(
+"login-screen"
+)
+.style.display="none";
+
+document
+.getElementById(
+"app"
+)
+.style.display="block";
+
+document
+.getElementById(
+"userName"
+)
+.innerText=email;
+
+}
+
+showApp();
+
+</script>
+
+</body>
+</html>
