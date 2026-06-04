@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "categoria":"Aceites"
+  },
+  {
+    "categoria":"Aceites Envasados",
+    "Exhibicion Lima":16,
+    "Exhibicion Provincias":20
+  },
+  {
+    "categoria":"Aceites Industriales",
+    "Exhibicion Lima":16,
+    "Exhibicion Provincias":20
+  },
+  {
+    "categoria":"Aguas",
+    "Audit Consumo":5.4,
+    "Chequeo":5.188345,
+    "Exhibicion Lima":15.695133
+  },
+  {
+    "categoria":"Alimentos Infantiles"
+  },
+  {
+    "categoria":"Arroz"
+  },
+  {
+    "categoria":"Bebibles"
+  },
+  {
+    "categoria":"Bocaditos"
+  }
+]
