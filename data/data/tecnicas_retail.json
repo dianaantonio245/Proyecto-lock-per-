@@ -1,0 +1,29 @@
+[
+  {
+    "servicio":"Scan Data Supermercados",
+    "complejidad":"Alta",
+    "tier":"Gold"
+  },
+  {
+    "servicio":"Scan Data C&C",
+    "complejidad":"Media",
+    "tier":"Silver"
+  },
+  {
+    "servicio":"Scan Data TTCC",
+    "complejidad":"Baja",
+    "tier":"Bronze"
+  },
+  {
+    "servicio":"Target Store"
+  },
+  {
+    "servicio":"KKAA Supesa"
+  },
+  {
+    "servicio":"KKAA Censo"
+  },
+  {
+    "servicio":"KKAA Totus"
+  }
+]
