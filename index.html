@@ -24,8 +24,6 @@ background:#f4f6f9;
 color:#1a1a1a;
 }
 
-/* LOGIN */
-
 #login-screen{
 height:100vh;
 display:flex;
@@ -61,7 +59,8 @@ margin-bottom:25px;
 font-size:14px;
 }
 
-input{
+input,
+select{
 width:100%;
 padding:12px;
 border:1px solid #d1d5db;
@@ -81,18 +80,11 @@ font-weight:600;
 cursor:pointer;
 }
 
-button:hover{
-opacity:.9;
-}
-
 .error{
 color:#dc2626;
-font-size:13px;
-margin-top:10px;
 display:none;
+margin-top:10px;
 }
-
-/* APP */
 
 #app{
 display:none;
@@ -106,16 +98,6 @@ justify-content:space-between;
 align-items:center;
 padding:0 25px;
 color:white;
-}
-
-.brand{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-.brand img{
-height:40px;
 }
 
 .user{
@@ -136,8 +118,20 @@ border-radius:15px;
 border:1px solid #e5e7eb;
 }
 
-.welcome h2{
-margin-bottom:10px;
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+#resultadoCotizacion{
+display:none;
+margin-top:20px;
+padding:20px;
+background:#f9fafb;
+border-radius:12px;
+border:1px solid #e5e7eb;
 }
 
 </style>
@@ -146,16 +140,13 @@ margin-bottom:10px;
 
 <body>
 
-<!-- LOGIN -->
-
 <div id="login-screen">
 
 <div class="login-card">
 
 <img
-src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg"
-class="logo"
-id="logoLock">
+src="Logo Lock d&n fase 1 7.png"
+class="logo">
 
 <h1>LOCK Cotizaciones</h1>
 
@@ -180,19 +171,13 @@ Solo se permiten correos @dichter-neira.com
 
 </div>
 
-<!-- APP -->
-
 <div id="app">
 
 <div class="topbar">
 
-<div class="brand">
-
 <div>
 <h3>LOCK</h3>
 <small>by dichter & neira</small>
-</div>
-
 </div>
 
 <div class="user" id="userName">
@@ -205,20 +190,84 @@ Usuario
 
 <div class="welcome">
 
-<h2>
-Bienvenido al Sistema de Cotizaciones
-</h2>
+<h2>Nueva Cotización</h2>
 
 <p>
-La aplicación está funcionando correctamente.
+Genera una cotización para Canal Tradicional o Retail.
 </p>
 
+<div class="grid">
+
+<div>
+<label>Cliente</label>
+<input id="cliente">
 </div>
+
+<div>
+<label>País</label>
+<input id="pais" value="Perú">
+</div>
+
+<div>
+<label>Vendedor</label>
+<input id="vendedor">
+</div>
+
+<div>
+<label>Canal</label>
+<select id="canal">
+<option value="tradicional">
+Tradicional
+</option>
+
+<option value="retail">
+Retail
+</option>
+</select>
+</div>
+
+<div>
+<label>Categoría</label>
+<select id="categoria">
+<option>Aceites</option>
+<option>Aguas</option>
+<option>Arroz</option>
+<option>Bebibles</option>
+<option>Bocaditos</option>
+</select>
+</div>
+
+<div>
+<label>Servicio</label>
+<select id="servicio">
+<option>Audit Consumo</option>
+<option>Chequeo</option>
+<option>Exhibicion Lima</option>
+</select>
+</div>
+
+<div>
+<label>Cantidad</label>
+<input
+id="cantidad"
+type="number"
+value="100">
+</div>
+
+</div>
+
+<button
+onclick="calcularCotizacion()">
+Calcular Cotización
+</button>
+
+<div id="resultadoCotizacion"></div>
 
 </div>
 
 </div>
 
+</div>
 <script>
 
 function login(){
@@ -278,6 +327,102 @@ document
 "userName"
 )
 .innerText=email;
+
+}
+
+function calcularCotizacion(){
+
+const cliente =
+document.getElementById(
+"cliente"
+).value;
+
+const canal =
+document.getElementById(
+"canal"
+).value;
+
+const categoria =
+document.getElementById(
+"categoria"
+).value;
+
+const servicio =
+document.getElementById(
+"servicio"
+).value;
+
+const cantidad =
+Number(
+document.getElementById(
+"cantidad"
+).value
+);
+
+let precio = 0;
+
+if(
+categoria==="Aceites" &&
+servicio==="Audit Consumo"
+){
+precio = 7.21;
+}
+
+if(
+categoria==="Aceites" &&
+servicio==="Chequeo"
+){
+precio = 5.18;
+}
+
+if(
+categoria==="Aguas" &&
+servicio==="Audit Consumo"
+){
+precio = 5.40;
+}
+
+if(
+categoria==="Aguas" &&
+servicio==="Exhibicion Lima"
+){
+precio = 15.69;
+}
+
+const total =
+precio * cantidad;
+
+document
+.getElementById(
+"resultadoCotizacion"
+)
+.style.display="block";
+
+document
+.getElementById(
+"resultadoCotizacion"
+)
+.innerHTML = `
+
+<h3>Resumen de Cotización</h3>
+
+<p><b>Cliente:</b> ${cliente}</p>
+
+<p><b>Canal:</b> ${canal}</p>
+
+<p><b>Categoría:</b> ${categoria}</p>
+
+<p><b>Servicio:</b> ${servicio}</p>
+
+<p><b>Cantidad:</b> ${cantidad}</p>
+
+<p><b>Precio Unitario:</b> $${precio}</p>
+
+<hr>
+
+<h2>Total: $${total.toFixed(2)}</h2>
+
+`;
 
 }
 
