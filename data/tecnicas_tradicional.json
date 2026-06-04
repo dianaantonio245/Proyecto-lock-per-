@@ -1,0 +1,34 @@
+[
+  {
+    "servicio": "Audit Consumo",
+    "costo_base": 5.40
+  },
+  {
+    "servicio": "Chequeo",
+    "costo_base": 5.19
+  },
+  {
+    "servicio": "Exhibicion Lima",
+    "costo_base": 15.69
+  },
+  {
+    "servicio": "Audit Insumos",
+    "costo_base": 7.50
+  },
+  {
+    "servicio": "Check",
+    "costo_base": 6.80
+  },
+  {
+    "servicio": "Chequeo Insumos",
+    "costo_base": 8.20
+  },
+  {
+    "servicio": "Back Data Audit Consumo",
+    "costo_base": 4.50
+  },
+  {
+    "servicio": "Back Data Audit Insumos",
+    "costo_base": 5.00
+  }
+]
