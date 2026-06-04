@@ -1,0 +1,38 @@
+[
+  {
+    "entrega":"Mensual c/ apertura semanal entrega mensual",
+    "factor":1.15
+  },
+  {
+    "entrega":"Mensual c/ entrega semanal",
+    "factor":1.15
+  },
+  {
+    "entrega":"Bimestral (consolidado de 2 meses)",
+    "factor":1.60
+  },
+  {
+    "entrega":"Trimestral (apertura mensual)",
+    "factor":2.10
+  },
+  {
+    "entrega":"Semestral (apertura mensual)",
+    "factor":3.90
+  },
+  {
+    "entrega":"Semestral (acumulado)",
+    "factor":3.00
+  },
+  {
+    "entrega":"ANUAL (apertura mensual)",
+    "factor":2.70
+  },
+  {
+    "entrega":"ANUAL (acumulado)",
+    "factor":1.50
+  },
+  {
+    "entrega":"Back Data",
+    "factor":3.00
+  }
+]
