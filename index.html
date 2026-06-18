@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,122 +7,249 @@
 <title>LOCK Cotizaciones</title>
 
 <style>
+
 body{
-margin:0;
-font-family:Arial;
-background:#0F2544;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#EEF2F7;
 }
 
+/* LOGIN */
+
 #login{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .card{
-background:white;
-padding:40px;
-border-radius:16px;
-text-align:center;
-width:350px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:380px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
-img{
-width:200px;
-margin-bottom:20px;
+.logo{
+    width:180px;
+    margin-bottom:20px;
 }
 
 input{
-width:100%;
-padding:10px;
-margin-top:10px;
-border:1px solid #ccc;
-border-radius:8px;
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+    border:1px solid #D1D5DB;
+    border-radius:10px;
+    box-sizing:border-box;
+}
+
+input:focus{
+    outline:none;
+    border-color:#0F2544;
 }
 
 button{
-width:100%;
-margin-top:15px;
-padding:10px;
-background:#0F2544;
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    background:#0F2544;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+button:hover{
+    background:#173763;
 }
 
 #error{
-color:red;
-display:none;
-margin-top:10px;
+    color:red;
+    display:none;
+    margin-top:10px;
 }
 
+/* APP */
+
 #app{
-display:none;
-color:white;
-text-align:center;
-padding-top:100px;
+    display:none;
+    min-height:100vh;
 }
+
+/* HEADER */
+
+header{
+    background:#0F2544;
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-header{
+    width:100px;
+}
+
+.header-left h1{
+    margin:0;
+}
+
+.header-left p{
+    margin:0;
+    opacity:.8;
+}
+
+/* CONTENIDO */
+
+.main{
+    padding:30px;
+}
+
+.bienvenida{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.bienvenida h2{
+    color:#0F2544;
+    margin-top:0;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <!-- LOGIN -->
 <div id="login">
-  <div class="card">
-    <img src="Logo Lock d&n fase 1 7.png">
-    <h2>LOCK Cotizaciones</h2>
 
-    <input type="email" id="email" placeholder="nombre@dichter-neira.com">
+    <div class="card">
 
-    <button onclick="login()">Ingresar</button>
+        <img src="Logo Lock d&n fase 1 7.png" class="logo">
 
-    <div id="error">Solo correos @dichter-neira.com</div>
-  </div>
+        <h2>LOCK Cotizaciones</h2>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="nombre@dichter-neira.com">
+
+        <button onclick="login()">
+            Ingresar
+        </button>
+
+        <div id="error">
+            Solo correos @dichter-neira.com
+        </div>
+
+    </div>
+
 </div>
 
 <!-- APP -->
 <div id="app">
-  <h1>Bienvenido a LOCK</h1>
-  <p id="user"></p>
+
+    <header>
+
+        <div class="header-left">
+
+            <img src="Logo Lock d&n fase 1 7.png"
+                 class="logo-header">
+
+            <div>
+                <h1>LOCK Cotizaciones</h1>
+                <p>Dichter & Neira</p>
+            </div>
+
+        </div>
+
+        <div id="user"></div>
+
+    </header>
+
+    <div class="main">
+
+        <div class="bienvenida">
+
+            <h2>Bienvenido a LOCK</h2>
+
+            <p>
+                Esta será la nueva plataforma de cotizaciones.
+            </p>
+
+            <p>
+                En el siguiente paso construiremos la interfaz
+                del cotizador igual al Excel.
+            </p>
+
+        </div>
+
+    </div>
+
 </div>
 
 <script>
 
 function login(){
 
-    const email =
-    document.getElementById("email").value.trim().toLowerCase();
+    const email = document
+        .getElementById("email")
+        .value
+        .trim()
+        .toLowerCase();
 
     if(!email.endsWith("@dichter-neira.com")){
-        document.getElementById("error").style.display = "block";
+
+        document.getElementById("error")
+        .style.display = "block";
+
         return;
     }
 
     localStorage.setItem("user", email);
 
-    document.getElementById("login").style.display = "none";
-    document.getElementById("app").style.display = "block";
-
-    document.getElementById("user").innerText = email;
+    mostrarApp(email);
 }
 
-// auto login si ya estaba guardado
+function mostrarApp(usuario){
+
+    document.getElementById("login")
+    .style.display = "none";
+
+    document.getElementById("app")
+    .style.display = "block";
+
+    document.getElementById("user")
+    .innerText = usuario;
+}
+
 window.onload = () => {
 
     const user = localStorage.getItem("user");
 
-    if(user && user.endsWith("@dichter-neira.com")){
-        document.getElementById("login").style.display = "none";
-        document.getElementById("app").style.display = "block";
-        document.getElementById("user").innerText = user;
-    }
+    if(user &&
+       user.endsWith("@dichter-neira.com")){
 
+        mostrarApp(user);
+    }
 };
 
 </script>
 
 </body>
 </html>
+```
