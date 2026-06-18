@@ -80,8 +80,6 @@ button:hover{
     min-height:100vh;
 }
 
-/* HEADER */
-
 header{
     background:#0F2544;
     color:white;
@@ -101,17 +99,6 @@ header{
     width:100px;
 }
 
-.header-left h1{
-    margin:0;
-}
-
-.header-left p{
-    margin:0;
-    opacity:.8;
-}
-
-/* CONTENIDO */
-
 .main{
     padding:30px;
 }
@@ -121,11 +108,23 @@ header{
     padding:30px;
     border-radius:20px;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
+    margin-bottom:20px;
 }
 
 .bienvenida h2{
     color:#0F2544;
     margin-top:0;
+}
+
+.opcion{
+    display:block;
+    margin-top:15px;
+    font-size:18px;
+}
+
+.opcion input{
+    width:auto;
+    margin-right:10px;
 }
 
 </style>
@@ -183,17 +182,61 @@ header{
 
     <div class="main">
 
+        <!-- Selección -->
         <div class="bienvenida">
 
-            <h2>Bienvenido a LOCK</h2>
+            <h2>Seleccione la metodología</h2>
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="metodologia"
+                    value="retail"
+                    onchange="cambiarMetodologia()">
+
+                Retail
+
+            </label>
+
+            <label class="opcion">
+
+                <input
+                    type="radio"
+                    name="metodologia"
+                    value="tradicional"
+                    onchange="cambiarMetodologia()">
+
+                Tradicional
+
+            </label>
+
+        </div>
+
+        <!-- Retail -->
+        <div id="retail-form"
+             class="bienvenida"
+             style="display:none;">
+
+            <h2>Cotizador Retail</h2>
 
             <p>
-                Esta será la nueva plataforma de cotizaciones.
+                Aquí construiremos la tabla Retail
+                igual al Excel.
             </p>
 
+        </div>
+
+        <!-- Tradicional -->
+        <div id="tradicional-form"
+             class="bienvenida"
+             style="display:none;">
+
+            <h2>Cotizador Tradicional</h2>
+
             <p>
-                En el siguiente paso construiremos la interfaz
-                del cotizador igual al Excel.
+                Aquí construiremos el formulario
+                Tradicional igual al Excel.
             </p>
 
         </div>
@@ -206,8 +249,8 @@ header{
 
 function login(){
 
-    const email = document
-        .getElementById("email")
+    const email =
+        document.getElementById("email")
         .value
         .trim()
         .toLowerCase();
@@ -228,13 +271,13 @@ function login(){
 function mostrarApp(usuario){
 
     document.getElementById("login")
-    .style.display = "none";
+        .style.display = "none";
 
     document.getElementById("app")
-    .style.display = "block";
+        .style.display = "block";
 
     document.getElementById("user")
-    .innerText = usuario;
+        .innerText = usuario;
 }
 
 window.onload = () => {
@@ -246,10 +289,40 @@ window.onload = () => {
 
         mostrarApp(user);
     }
+
 };
+
+function cambiarMetodologia(){
+
+    const metodologia =
+        document.querySelector(
+            'input[name="metodologia"]:checked'
+        ).value;
+
+    document.getElementById("retail-form")
+        .style.display = "none";
+
+    document.getElementById("tradicional-form")
+        .style.display = "none";
+
+    if(metodologia === "retail"){
+
+        document.getElementById("retail-form")
+            .style.display = "block";
+
+    }
+
+    if(metodologia === "tradicional"){
+
+        document.getElementById("tradicional-form")
+            .style.display = "block";
+
+    }
+}
 
 </script>
 
 </body>
 </html>
-```
+
+
