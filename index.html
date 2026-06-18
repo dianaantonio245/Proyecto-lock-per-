@@ -1,1029 +1,128 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>LOCK Cotizaciones V3</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>LOCK Cotizaciones</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-}
-
 body{
-background:#f5f7fb;
-color:#1f2937;
+margin:0;
+font-family:Arial;
+background:#0F2544;
 }
 
-#login-screen{
+#login{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:#0F2544;
-}
-
-.login-card{
-background:white;
-width:420px;
-padding:40px;
-border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-text-align:center;
-}
-
-.logo{
-width:220px;
-margin-bottom:25px;
-}
-
-.login-card h1{
-color:#0F2544;
-margin-bottom:10px;
-}
-
-.subtitle{
-color:#6b7280;
-margin-bottom:25px;
-}
-
-input,
-select{
-width:100%;
-padding:12px;
-border:1px solid #d1d5db;
-border-radius:10px;
-font-size:14px;
-}
-
-button{
-border:none;
-cursor:pointer;
-border-radius:10px;
-padding:12px;
-font-weight:600;
-}
-
-.btn-primary{
-background:#0F2544;
-color:white;
-width:100%;
-}
-
-.error{
-display:none;
-margin-top:10px;
-font-size:13px;
-color:#dc2626;
-}
-
-#app{
-display:none;
-}
-
-.topbar{
-height:70px;
-background:#0F2544;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:0 25px;
-color:white;
-}
-
-.brand h3{
-margin:0;
-}
-
-.user{
-background:rgba(255,255,255,.15);
-padding:8px 14px;
-border-radius:999px;
-font-size:13px;
-}
-
-.main{
-padding:30px;
 }
 
 .card{
 background:white;
-padding:25px;
+padding:40px;
 border-radius:16px;
-border:1px solid #e5e7eb;
+text-align:center;
+width:350px;
 }
 
-.card h2{
-margin-bottom:10px;
+img{
+width:200px;
+margin-bottom:20px;
 }
 
-.card p{
-color:#6b7280;
-margin-bottom:25px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:15px;
-}
-
-.field label{
-display:block;
-margin-bottom:6px;
-font-size:13px;
-font-weight:600;
-}
-
-.section-title{
-margin-top:30px;
-margin-bottom:15px;
-font-weight:700;
-font-size:18px;
-}
-
-.btn-add{
-background:#16a34a;
-color:white;
-margin-top:15px;
-}
-
-table{
+input{
 width:100%;
-border-collapse:collapse;
-margin-top:15px;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+border-radius:8px;
 }
 
-table th{
+button{
+width:100%;
+margin-top:15px;
+padding:10px;
 background:#0F2544;
 color:white;
-padding:12px;
-font-size:13px;
+border:none;
+border-radius:8px;
+cursor:pointer;
 }
 
-table td{
-padding:10px;
-border:1px solid #e5e7eb;
+#error{
+color:red;
+display:none;
+margin-top:10px;
 }
 
-.total-box{
-margin-top:20px;
-padding:20px;
-background:#f8fafc;
-border-radius:12px;
-border:1px solid #e5e7eb;
+#app{
+display:none;
+color:white;
+text-align:center;
+padding-top:100px;
 }
-
-.total-box h2{
-color:#0F2544;
-}
-
 </style>
-
 </head>
 
 <body>
 
-<div id="login-screen">
+<!-- LOGIN -->
+<div id="login">
+  <div class="card">
+    <img src="Logo Lock d&n fase 1 7.png">
+    <h2>LOCK Cotizaciones</h2>
 
-<div class="login-card">
+    <input type="email" id="email" placeholder="nombre@dichter-neira.com">
 
-<img
-src="Logo Lock d&n fase 1 7.png"
-class="logo">
+    <button onclick="login()">Ingresar</button>
 
-<h1>LOCK Cotizaciones</h1>
-
-<p class="subtitle">
-Ingresa tu correo corporativo
-</p>
-
-<input
-type="email"
-id="email"
-placeholder="nombre@dichter-neira.com">
-
-<button
-class="btn-primary"
-onclick="login()">
-Ingresar
-</button>
-
-<div
-id="error"
-class="error">
-Solo se permiten correos @dichter-neira.com
+    <div id="error">Solo correos @dichter-neira.com</div>
+  </div>
 </div>
 
-</div>
-
-</div>
-
+<!-- APP -->
 <div id="app">
-
-<div class="topbar">
-
-<div class="brand">
-<h3>LOCK</h3>
-<small>by dichter & neira</small>
+  <h1>Bienvenido a LOCK</h1>
+  <p id="user"></p>
 </div>
 
-<div
-class="user"
-id="userName">
-Usuario
-</div>
-
-</div>
-
-<div class="main">
-
-<div class="card">
-
-<h2>Nueva Cotización</h2>
-
-<p>
-Genera cotizaciones para Canal Tradicional o Retail.
-</p>
-
-<div class="grid">
-
-<div class="field">
-<label>Cliente</label>
-<input id="cliente">
-</div>
-
-<div class="field">
-<label>País</label>
-<input id="pais" value="Perú">
-</div>
-
-<div class="field">
-<label>Canal</label>
-
-<select id="canal">
-
-<option value="tradicional">
-Tradicional
-</option>
-
-<option value="retail">
-Retail
-</option>
-
-</select>
-
-</div>
-
-<div class="field">
-
-<label>Vendedor</label>
-
-<select id="vendedor">
-
-<option>
-Seleccione vendedor
-</option>
-
-<option>
-Vendedor 1
-</option>
-
-<option>
-Vendedor 2
-</option>
-
-<option>
-Vendedor 3
-</option>
-
-</select>
-
-</div>
-
-</div>
-
-<h3 class="section-title">
-Servicios Cotizados
-</h3>
-
-<button
-class="btn-add"
-onclick="agregarLinea()">
-+ Agregar Servicio
-</button>
-
-<table id="tablaCotizacion">
-
-<thead>
-
-<tr>
-<th>Categoría</th>
-<th>Servicio</th>
-<th>Cantidad</th>
-<th>Subtotal</th>
-<th></th>
-</tr>
-
-</thead>
-
-<tbody id="tbodyCotizacion">
-</tbody>
-
-</table>
-
-<div class="total-box">
-
-<h2 id="totalGeneral">
-Total: $0
-</h2>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 <script>
-
-let bdTradicional = [];
-let bdRetail = [];
-
-async function cargarBases(){
-
-    try{
-
-        const tradicional =
-        await fetch(
-            "data/tradicional.json"
-        );
-
-        bdTradicional =
-        await tradicional.json();
-
-        const retail =
-        await fetch(
-            "data/retail.json"
-        );
-
-        bdRetail =
-        await retail.json();
-
-        console.log(
-            "Tradicional",
-            bdTradicional.length
-        );
-
-        console.log(
-            "Retail",
-            bdRetail.length
-        );
-
-    }catch(error){
-
-        console.error(error);
-
-        alert(
-            "No se pudieron cargar los JSON"
-        );
-
-    }
-
-}
 
 function login(){
 
     const email =
-    document
-    .getElementById("email")
-    .value
-    .trim()
-    .toLowerCase();
+    document.getElementById("email").value.trim().toLowerCase();
 
-    if(
-        !email.endsWith(
-            "@dichter-neira.com"
-        )
-    ){
-
-        document
-        .getElementById("error")
-        .style.display="block";
-
-        return;
-
-    }
-
-    localStorage.setItem(
-        "dn-user",
-        email
-    );
-
-    showApp();
-
-}
-
-function showApp(){
-
-    const email =
-    localStorage.getItem(
-        "dn-user"
-    );
-
-    if(!email){
+    if(!email.endsWith("@dichter-neira.com")){
+        document.getElementById("error").style.display = "block";
         return;
     }
 
-    document
-    .getElementById(
-        "login-screen"
-    )
-    .style.display="none";
+    localStorage.setItem("user", email);
 
-    document
-    .getElementById(
-        "app"
-    )
-    .style.display="block";
+    document.getElementById("login").style.display = "none";
+    document.getElementById("app").style.display = "block";
 
-    document
-    .getElementById(
-        "userName"
-    )
-    .innerText=email;
-
+    document.getElementById("user").innerText = email;
 }
 
-function obtenerBase(){
+// auto login si ya estaba guardado
+window.onload = () => {
 
-    const canal =
-    document
-    .getElementById(
-        "canal"
-    )
-    .value;
+    const user = localStorage.getItem("user");
 
-    return canal === "retail"
-    ? bdRetail
-    : bdTradicional;
-
-}
-
-function obtenerCategorias(){
-
-    const bd =
-    obtenerBase();
-
-    return bd.map(
-        item => item.categoria
-    );
-
-}
-
-function crearSelectCategorias(){
-
-    const categorias =
-    obtenerCategorias();
-
-    let html = "";
-
-    categorias.forEach(cat => {
-
-        html += `
-        <option value="${cat}">
-            ${cat}
-        </option>
-        `;
-
-    });
-
-    return html;
-
-}
-
-function agregarLinea(){
-
-    const tbody =
-    document.getElementById(
-        "tbodyCotizacion"
-    );
-
-    const fila =
-    document.createElement("tr");
-
-    fila.innerHTML = `
-
-    <td>
-
-        <select
-        class="categoria"
-        onchange="actualizarServicios(this)">
-
-            ${crearSelectCategorias()}
-
-        </select>
-
-    </td>
-
-    <td>
-
-        <select
-        class="servicio">
-        </select>
-
-    </td>
-
-    <td>
-
-        <input
-        type="number"
-        value="100"
-        class="cantidad">
-
-    </td>
-
-    <td class="subtotal">
-
-        $0
-
-    </td>
-
-    <td>
-
-        <button
-        onclick="eliminarFila(this)">
-        X
-        </button>
-
-    </td>
-
-    `;
-
-    tbody.appendChild(fila);
-
-    const categoria =
-    fila.querySelector(
-        ".categoria"
-    );
-
-    actualizarServicios(
-        categoria
-    );
-
-}
-
-function actualizarServicios(selectCategoria){
-
-    const fila =
-    selectCategoria.closest("tr");
-
-    const servicioSelect =
-    fila.querySelector(
-        ".servicio"
-    );
-
-    const categoria =
-    selectCategoria.value;
-
-    const bd =
-    obtenerBase();
-
-    const registro =
-    bd.find(
-        x => x.categoria === categoria
-    );
-
-    if(!registro){
-        return;
+    if(user && user.endsWith("@dichter-neira.com")){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("app").style.display = "block";
+        document.getElementById("user").innerText = user;
     }
-
-    servicioSelect.innerHTML = "";
-
-    Object.keys(
-        registro
-    ).forEach(campo => {
-
-        if(
-            campo !== "categoria"
-        ){
-
-            servicioSelect.innerHTML += `
-            <option value="${campo}">
-                ${campo}
-            </option>
-            `;
-
-        }
-
-    });
-
-}
-
-function eliminarFila(btn){
-
-    btn
-    .closest("tr")
-    .remove();
-
-    calcularTotal();
-
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    cargarBases();
-});
-function obtenerPrecio(categoria, servicio){
-
-    const bd =
-    obtenerBase();
-
-    const registro =
-    bd.find(
-        x => x.categoria === categoria
-    );
-
-    if(!registro){
-        return 0;
-    }
-
-    return Number(
-        registro[servicio] || 0
-    );
-
-}
-
-function calcularFila(fila){
-
-    const categoria =
-    fila.querySelector(
-        ".categoria"
-    ).value;
-
-    const servicio =
-    fila.querySelector(
-        ".servicio"
-    ).value;
-
-    const cantidad =
-    Number(
-        fila.querySelector(
-            ".cantidad"
-        ).value
-    );
-
-    const precio =
-    obtenerPrecio(
-        categoria,
-        servicio
-    );
-
-    const subtotal =
-    precio * cantidad;
-
-    fila.querySelector(
-        ".subtotal"
-    ).innerHTML =
-
-    "$" +
-    subtotal.toLocaleString(
-        "es-PE",
-        {
-            minimumFractionDigits:2,
-            maximumFractionDigits:2
-        }
-    );
-
-    return subtotal;
-
-}
-
-function calcularTotal(){
-
-    let total = 0;
-
-    document
-    .querySelectorAll(
-        "#tbodyCotizacion tr"
-    )
-    .forEach(fila => {
-
-        total +=
-        calcularFila(
-            fila
-        );
-
-    });
-
-    document
-    .getElementById(
-        "totalGeneral"
-    )
-    .innerHTML =
-
-    "Total: $" +
-
-    total.toLocaleString(
-        "es-PE",
-        {
-            minimumFractionDigits:2,
-            maximumFractionDigits:2
-        }
-    );
-
-}
-
-document.addEventListener(
-    "change",
-    function(e){
-
-        if(
-            e.target.classList.contains("categoria")
-        ){
-
-            actualizarServicios(
-                e.target
-            );
-
-            calcularTotal();
-
-        }
-
-        if(
-            e.target.classList.contains("servicio")
-        ){
-
-            calcularTotal();
-
-        }
-
-        if(
-            e.target.classList.contains("cantidad")
-        ){
-
-            calcularTotal();
-
-        }
-
-    }
-);
-
-document.addEventListener(
-    "input",
-    function(e){
-
-        if(
-            e.target.classList.contains("cantidad")
-        ){
-
-            calcularTotal();
-
-        }
-
-    }
-);
-
-const originalAgregarLinea =
-agregarLinea;
-
-agregarLinea = function(){
-
-    originalAgregarLinea();
-
-    const filas =
-    document.querySelectorAll(
-        "#tbodyCotizacion tr"
-    );
-
-    const ultima =
-    filas[
-        filas.length - 1
-    ];
-
-    calcularFila(
-        ultima
-    );
-
-    calcularTotal();
 
 };
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-let contadorCotizacion = 1;
 
-function generarNumeroCotizacion(){
+</script>
 
-    const numero =
-    String(
-        contadorCotizacion
-    ).padStart(
-        5,
-        "0"
-    );
-
-    return "LOCK-" + numero;
-
-}
-
-function descargarPDF(){
-
-    const { jsPDF } =
-    window.jspdf;
-
-    const doc =
-    new jsPDF();
-
-    const numeroCotizacion =
-    generarNumeroCotizacion();
-
-    const fecha =
-    new Date()
-    .toLocaleDateString(
-        "es-PE"
-    );
-
-    const cliente =
-    document
-    .getElementById(
-        "cliente"
-    )
-    .value;
-
-    const vendedor =
-    document
-    .getElementById(
-        "vendedor"
-    )
-    .value;
-
-    const canal =
-    document
-    .getElementById(
-        "canal"
-    )
-    .value;
-
-    let y = 20;
-
-    doc.setFontSize(20);
-
-    doc.text(
-        "LOCK COTIZACIONES",
-        20,
-        y
-    );
-
-    y += 12;
-
-    doc.setFontSize(11);
-
-    doc.text(
-        numeroCotizacion,
-        20,
-        y
-    );
-
-    y += 8;
-
-    doc.text(
-        "Fecha: " + fecha,
-        20,
-        y
-    );
-
-    y += 8;
-
-    doc.text(
-        "Cliente: " + cliente,
-        20,
-        y
-    );
-
-    y += 8;
-
-    doc.text(
-        "Canal: " + canal,
-        20,
-        y
-    );
-
-    y += 8;
-
-    doc.text(
-        "Vendedor: " + vendedor,
-        20,
-        y
-    );
-
-    y += 15;
-
-    doc.setFontSize(12);
-
-    doc.text(
-        "DETALLE",
-        20,
-        y
-    );
-
-    y += 10;
-
-    document
-    .querySelectorAll(
-        "#tbodyCotizacion tr"
-    )
-    .forEach(fila => {
-
-        const categoria =
-        fila.querySelector(
-            ".categoria"
-        ).value;
-
-        const servicio =
-        fila.querySelector(
-            ".servicio"
-        ).value;
-
-        const cantidad =
-        fila.querySelector(
-            ".cantidad"
-        ).value;
-
-        const subtotal =
-        fila.querySelector(
-            ".subtotal"
-        ).innerText;
-
-        doc.text(
-            categoria +
-            " | " +
-            servicio +
-            " | " +
-            cantidad +
-            " | " +
-            subtotal,
-            20,
-            y
-        );
-
-        y += 8;
-
-    });
-
-    y += 10;
-
-    const total =
-    document
-    .getElementById(
-        "totalGeneral"
-    )
-    .innerText;
-
-    doc.setFontSize(16);
-
-    doc.text(
-        total,
-        20,
-        y
-    );
-
-    doc.setTextColor(
-        220,
-        220,
-        220
-    );
-
-    doc.setFontSize(
-        50
-    );
-
-    doc.text(
-        "LOCK",
-        50,
-        180,
-        {
-            angle:45
-        }
-    );
-
-    doc.save(
-        numeroCotizacion +
-        ".pdf"
-    );
-
-    contadorCotizacion++;
-
-}
-  <button
-class="btn-primary"
-onclick="descargarPDF()"
-style="margin-top:20px;">
-Descargar Cotización PDF
-</button>
+</body>
+</html>
