@@ -1,474 +1,1096 @@
-[
-  {
-    "categoria": "Categoria",
-    "LEVANTAMIENTO DE CAMPO": "Llave",
-    "FILTROS_TR": "Servicios",
-    "FACTOR_CIUDAD": "CIUDAD",
-    "LISTADO COMERCIAL": "ID",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Servicio Campo"
-  },
-  {
-    "categoria": "Aceites",
-    "LEVANTAMIENTO DE CAMPO": "ACEITESAudit Consumo",
-    "FILTROS_TR": "Audit Consumo",
-    "FACTOR_CIUDAD": "LIMA",
-    "LISTADO COMERCIAL": 1000163.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Aceites Envasados",
-    "LEVANTAMIENTO DE CAMPO": "BOCADITOSAudit Consumo",
-    "FILTROS_TR": "Audit Insumos",
-    "FACTOR_CIUDAD": "AREQUIPA",
-    "LISTADO COMERCIAL": 1000164.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Aceites Industriales",
-    "LEVANTAMIENTO DE CAMPO": "BOCADITOSAudit Consumo",
-    "FILTROS_TR": "Chequeo",
-    "FACTOR_CIUDAD": "AYACUCHO",
-    "LISTADO COMERCIAL": 1000169.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Aguas",
-    "LEVANTAMIENTO DE CAMPO": "CAFÉ Y SUCEDÁNEOSAudit Consumo",
-    "FILTROS_TR": "EXHIBICIÓN",
-    "FACTOR_CIUDAD": "CAJAMARCA",
-    "LISTADO COMERCIAL": 1000171.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Alimentos Infantiles",
-    "LEVANTAMIENTO DE CAMPO": "CEREALESAudit Consumo",
-    "FILTROS_TR": "Check",
-    "FACTOR_CIUDAD": "CHICLAYO",
-    "LISTADO COMERCIAL": 1000173.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Arroz",
-    "LEVANTAMIENTO DE CAMPO": "CHOCOLATESAudit Consumo",
-    "FILTROS_TR": "Chequeo Insumos",
-    "FACTOR_CIUDAD": "CHIMBOTE",
-    "LISTADO COMERCIAL": 1000174.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Bebibles",
-    "LEVANTAMIENTO DE CAMPO": "CONGELADOSAudit Consumo",
-    "FILTROS_TR": "Back Data Audit Consumo",
-    "FACTOR_CIUDAD": "CUSCO",
-    "LISTADO COMERCIAL": 16780.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Bebibles",
-    "LEVANTAMIENTO DE CAMPO": "HAIR CAREAudit Consumo",
-    "FILTROS_TR": "Back Data Audit Insumos",
-    "FACTOR_CIUDAD": "HUANCAYO",
-    "LISTADO COMERCIAL": 1000176.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Bocaditos",
-    "LEVANTAMIENTO DE CAMPO": "HAIR CAREAudit Consumo",
-    "FACTOR_CIUDAD": "HUANUCO",
-    "LISTADO COMERCIAL": 1000177.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Café y Sucedáneos",
-    "LEVANTAMIENTO DE CAMPO": "DESODORANTESAudit Consumo",
-    "FACTOR_CIUDAD": "ICA",
-    "LISTADO COMERCIAL": 1000178.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Caldos",
-    "LEVANTAMIENTO DE CAMPO": "DETERGENTESAudit Consumo",
-    "FACTOR_CIUDAD": "IQUITOS",
-    "LISTADO COMERCIAL": 1000179.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Caldos Y Sazonadores",
-    "LEVANTAMIENTO DE CAMPO": "EMBUTIDOSAudit Consumo",
-    "FACTOR_CIUDAD": "NORTE CHICO",
-    "LISTADO COMERCIAL": 1000181.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Carne de Pollo",
-    "LEVANTAMIENTO DE CAMPO": "FIDEOSAudit Consumo",
-    "FACTOR_CIUDAD": "PIURA",
-    "LISTADO COMERCIAL": 57188.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Cereales",
-    "LEVANTAMIENTO DE CAMPO": "GALLETASAudit Consumo",
-    "FACTOR_CIUDAD": "PUCALLPA",
-    "LISTADO COMERCIAL": 1000196.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Chocolates",
-    "LEVANTAMIENTO DE CAMPO": "GOLOSINASAudit Consumo",
-    "FACTOR_CIUDAD": "SUR CHICO",
-    "LISTADO COMERCIAL": 1000165.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Coberturas Y Chispas De Chocolate",
-    "LEVANTAMIENTO DE CAMPO": "HUEVOSAudit Consumo",
-    "FACTOR_CIUDAD": "TACNA",
-    "LISTADO COMERCIAL": 1000186.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "COMIDAS INSTANTANEAS",
-    "LEVANTAMIENTO DE CAMPO": "JABÓN DE LAVARAudit Consumo",
-    "FACTOR_CIUDAD": "TARAPOTO",
-    "LISTADO COMERCIAL": 77424.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Congelados",
-    "LEVANTAMIENTO DE CAMPO": "LECHESAudit Consumo",
-    "FACTOR_CIUDAD": "TRUJILLO",
-    "LISTADO COMERCIAL": 77441.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Conservas",
-    "LEVANTAMIENTO DE CAMPO": "MARGARINAS Y MANTEQUILLASAudit Consumo",
-    "FACTOR_CIUDAD": "PUNO",
-    "LISTADO COMERCIAL": 77471.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Conservas de Pescado",
-    "LEVANTAMIENTO DE CAMPO": "PETFOODAudit Consumo",
-    "FACTOR_CIUDAD": "JULIACA",
-    "LISTADO COMERCIAL": 1000188.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Crema de Chantilly",
-    "LEVANTAMIENTO DE CAMPO": "QUESOSAudit Consumo",
-    "FACTOR_CIUDAD": "SUR CHICO (AUDIT)",
-    "LISTADO COMERCIAL": 77683.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Dentales",
-    "LEVANTAMIENTO DE CAMPO": "QUITAMANCHASAudit Consumo",
-    "FACTOR_CIUDAD": "SULLANA",
-    "LISTADO COMERCIAL": 1000192.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Desodorantes",
-    "LEVANTAMIENTO DE CAMPO": "SALSAS FRÍASAudit Consumo",
-    "FACTOR_CIUDAD": "TUMBES",
-    "LISTADO COMERCIAL": 1000194.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Detergentes",
-    "LEVANTAMIENTO DE CAMPO": "SUAVIZANTESAudit Consumo",
-    "FACTOR_CIUDAD": "MOQUEGUA",
-    "LISTADO COMERCIAL": 1000018.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Detergentes Adic",
-    "LEVANTAMIENTO DE CAMPO": "YOGURTAudit Consumo",
-    "FACTOR_CIUDAD": "PAITA",
-    "LISTADO COMERCIAL": 1000225.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Embutidos",
-    "LEVANTAMIENTO DE CAMPO": "ACEITES INDUSTRIALESAudit Insumos",
-    "LISTADO COMERCIAL": 1000195.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Encuesta Bodegas",
-    "LEVANTAMIENTO DE CAMPO": "CARNE DE POLLOAudit Insumos",
-    "FACTOR_CIUDAD": "TODAS",
-    "LISTADO COMERCIAL": 1000207.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Energizantes",
-    "LEVANTAMIENTO DE CAMPO": "COBERTURAS Y CHISPAS DE CHOCOLATEAudit Insumos",
-    "LISTADO COMERCIAL": 1000240.0,
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Fideos",
-    "LEVANTAMIENTO DE CAMPO": "DETERGENTESAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "FS-PREGUNTAS VARIAS BONIF",
-    "LEVANTAMIENTO DE CAMPO": "FS-PREGUNTAS VARIAS BONIFAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Fudge",
-    "LEVANTAMIENTO DE CAMPO": "HARINAS INDUSTRIALESAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Galletas",
-    "LEVANTAMIENTO DE CAMPO": "LIMPIADORESAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Gaseosas",
-    "LEVANTAMIENTO DE CAMPO": "MANJAR BLANCOAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Golosinas",
-    "LEVANTAMIENTO DE CAMPO": "MANTECAS INDUSTRIALESAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Hair Care",
-    "LEVANTAMIENTO DE CAMPO": "MARGARINAS INDUSTRIALESAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Harinas Industriales",
-    "LEVANTAMIENTO DE CAMPO": "PANI-PREGUNTAS VARIAS BONIFAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Consumo"
-  },
-  {
-    "categoria": "Helados",
-    "LEVANTAMIENTO DE CAMPO": "PREMEZCLASAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Audit Consumo"
-  },
-  {
-    "categoria": "Huevos",
-    "LEVANTAMIENTO DE CAMPO": "SALSAS FRÍAS INDUSTRIALESAudit Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Insecticidas",
-    "LEVANTAMIENTO DE CAMPO": "ALICORP-LIMA +9Check",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Isotonicas",
-    "LEVANTAMIENTO DE CAMPO": "Varios SKUS BodegasCheck",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Jabón de Lavar",
-    "LEVANTAMIENTO DE CAMPO": "Varios SKUS Puestos de MercadoCheck",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Jabón de Tocador",
-    "LEVANTAMIENTO DE CAMPO": "CONSERVASChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Jugos Y Néctar",
-    "LEVANTAMIENTO DE CAMPO": "DENTALESChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Lavavajillas",
-    "LEVANTAMIENTO DE CAMPO": "JABÓN DE TOCADORChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Leche Condensada",
-    "LEVANTAMIENTO DE CAMPO": "LAVAVAJILLASChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Leches",
-    "LEVANTAMIENTO DE CAMPO": "LEJÍASChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Leches Condensadas",
-    "LEVANTAMIENTO DE CAMPO": "LIMPIADORESChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Leches Culinarias",
-    "LEVANTAMIENTO DE CAMPO": "MARGARINAS Y MANTEQUILLASChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Audit Insumo"
-  },
-  {
-    "categoria": "Leches Evaporadas + Polvo",
-    "LEVANTAMIENTO DE CAMPO": "POSTRESChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Audit Insumo"
-  },
-  {
-    "categoria": "Lejías",
-    "LEVANTAMIENTO DE CAMPO": "COBERTURAS Y CHISPAS DE CHOCOLATEChequeo Insumos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Limpiadores",
-    "LEVANTAMIENTO DE CAMPO": "ENCUESTA BODEGASEncuesta",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo Insumos"
-  },
-  {
-    "categoria": "Manjar Blanco",
-    "LEVANTAMIENTO DE CAMPO": "AGUASAudit Consumo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Mantecas Industriales",
-    "LEVANTAMIENTO DE CAMPO": "BEBIBLESAudit Consumo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Maquinas de Afeitar + Repuestos",
-    "LEVANTAMIENTO DE CAMPO": "DETERGENTES ADICAudit Consumo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Margarinas Industriales",
-    "LEVANTAMIENTO DE CAMPO": "CAFÉ Y SUCEDÁNEOSExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Margarinas y Mantequillas",
-    "LEVANTAMIENTO DE CAMPO": "CEREALESExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Mayonesas",
-    "LEVANTAMIENTO DE CAMPO": "CHOCOLATESExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Mermelada",
-    "LEVANTAMIENTO DE CAMPO": "HELADOSExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Mermeladas",
-    "LEVANTAMIENTO DE CAMPO": "LECHESExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Modificadores",
-    "LEVANTAMIENTO DE CAMPO": "MODIFICADORES Y COCOASExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Modificadores Y Cocoas",
-    "LEVANTAMIENTO DE CAMPO": "CAFÉ Y SUCEDÁNEOSExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Panes Industriales (inc Tostadas y Rapiditas)",
-    "LEVANTAMIENTO DE CAMPO": "CEREALESExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Panetones",
-    "LEVANTAMIENTO DE CAMPO": "CHOCOLATESExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "PANI-PREGUNTAS VARIAS BONIF",
-    "LEVANTAMIENTO DE CAMPO": "HELADOSExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Pañal Bebes",
-    "LEVANTAMIENTO DE CAMPO": "LECHESExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Papel Higienico",
-    "LEVANTAMIENTO DE CAMPO": "MODIFICADORES Y COCOASExhibición Lima",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Papel Toalla",
-    "LEVANTAMIENTO DE CAMPO": "COMIDAS INSTANTANEASChequeo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Petfood",
-    "LEVANTAMIENTO DE CAMPO": "GOLOSINASCheck",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Chequeo de Dist. & Precio"
-  },
-  {
-    "categoria": "Postres",
-    "LEVANTAMIENTO DE CAMPO": "ALICORP-LIMA +6Check",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Check"
-  },
-  {
-    "categoria": "Premezclas",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Check"
-  },
-  {
-    "categoria": "Proteccion Femenina",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Check"
-  },
-  {
-    "categoria": "Quesos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
-  },
-  {
-    "categoria": "Quitamanchas",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
-  },
-  {
-    "categoria": "Refrescos",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
-  },
-  {
-    "categoria": "Refrescos en Polvo",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
-  },
-  {
-    "categoria": "Ron y Pisco",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
-  },
-  {
-    "categoria": "Rtd",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Exhibición (Share of Shelf)"
-  },
-  {
-    "categoria": "Sal",
-    "Tabla Para Actualizar Semestralmente - Es Resumen del Reconocimiento de la Venta": "Total Exhibición (Share of Shelf)"
-  },
-  {
-    "categoria": "Salsas Frías"
-  },
-  {
-    "categoria": "Salsas Frías Industriales"
-  },
-  {
-    "categoria": "Shampoo"
-  },
-  {
-    "categoria": "Suavizantes"
-  },
-  {
-    "categoria": "Varios Skus Bodegas"
-  },
-  {
-    "categoria": "Varios Skus Puestos De Mercado"
-  },
-  {
-    "categoria": "Yogurt"
-  }
-]
+{
+  "tarifario": [
+    {
+      "categoria": "Aceites",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.21
+    },
+    {
+      "categoria": "Aceites",
+      "servicio": "Chequeo",
+      "tarifa": 5.188345441262499
+    },
+    {
+      "categoria": "Aceites Envasados",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 16.0
+    },
+    {
+      "categoria": "Aceites Envasados",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 20.0
+    },
+    {
+      "categoria": "Aceites Industriales",
+      "servicio": "Audit Insumos",
+      "tarifa": 14.1388688571429
+    },
+    {
+      "categoria": "Aguas",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.4
+    },
+    {
+      "categoria": "Aguas",
+      "servicio": "Chequeo",
+      "tarifa": 5.188345441262499
+    },
+    {
+      "categoria": "Aguas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 15.69513317625
+    },
+    {
+      "categoria": "Aguas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 19.6189164703125
+    },
+    {
+      "categoria": "Alimentos Infantiles",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 11.509764329249998
+    },
+    {
+      "categoria": "Alimentos Infantiles",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 14.3872054115625
+    },
+    {
+      "categoria": "Arroz",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Arroz",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 12.0
+    },
+    {
+      "categoria": "Arroz",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 15.0
+    },
+    {
+      "categoria": "Bebibles",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.2
+    },
+    {
+      "categoria": "Bebibles",
+      "servicio": "Chequeo",
+      "tarifa": 5.82465195764375
+    },
+    {
+      "categoria": "Bebibles",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 14.53253071875
+    },
+    {
+      "categoria": "Bebibles",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 18.1656633984375
+    },
+    {
+      "categoria": "Bocaditos",
+      "servicio": "Audit Consumo",
+      "tarifa": 8.0
+    },
+    {
+      "categoria": "Café y Sucedáneos",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Caldos",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.18
+    },
+    {
+      "categoria": "Caldos Y Sazonadores",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 10.463422117499999
+    },
+    {
+      "categoria": "Caldos Y Sazonadores",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 13.079277646875
+    },
+    {
+      "categoria": "Cereales",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.18
+    },
+    {
+      "categoria": "Cereales",
+      "servicio": "Chequeo",
+      "tarifa": 5.506498699453124
+    },
+    {
+      "categoria": "Cereales",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 20.926844234999997
+    },
+    {
+      "categoria": "Cereales",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 26.15855529375
+    },
+    {
+      "categoria": "Chocolates",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Chocolates",
+      "servicio": "Chequeo",
+      "tarifa": 5.240171311374999
+    },
+    {
+      "categoria": "Chocolates",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 20.926844234999997
+    },
+    {
+      "categoria": "Chocolates",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 26.15855529375
+    },
+    {
+      "categoria": "Coberturas Y Chispas De Chocolate",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.95
+    },
+    {
+      "categoria": "Coberturas Y Chispas De Chocolate",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 9.940251011625
+    },
+    {
+      "categoria": "Coberturas Y Chispas De Chocolate",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 12.42531376453125
+    },
+    {
+      "categoria": "Coberturas Y Chispas De Chocolate",
+      "servicio": "Chequeo Insumos",
+      "tarifa": 3.795
+    },
+    {
+      "categoria": "Congelados",
+      "servicio": "Audit Consumo",
+      "tarifa": 4.12
+    },
+    {
+      "categoria": "Congelados",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 19.108731881249998
+    },
+    {
+      "categoria": "Congelados",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 23.885914851562497
+    },
+    {
+      "categoria": "Conservas",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.21
+    },
+    {
+      "categoria": "Conservas",
+      "servicio": "Chequeo",
+      "tarifa": 5.19
+    },
+    {
+      "categoria": "Conservas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 17.805013806787496
+    },
+    {
+      "categoria": "Conservas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 17.805013806787496
+    },
+    {
+      "categoria": "Conservas de Pescado",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.21
+    },
+    {
+      "categoria": "Conservas de Pescado",
+      "servicio": "Chequeo",
+      "tarifa": 5.19
+    },
+    {
+      "categoria": "Conservas de Pescado",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 17.805013806787496
+    },
+    {
+      "categoria": "Conservas de Pescado",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 17.805013806787496
+    },
+    {
+      "categoria": "Crema de Chantilly",
+      "servicio": "Chequeo",
+      "tarifa": 3.795
+    },
+    {
+      "categoria": "Crema de Chantilly",
+      "servicio": "Chequeo Insumos",
+      "tarifa": 3.795
+    },
+    {
+      "categoria": "Dentales",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.0
+    },
+    {
+      "categoria": "Dentales",
+      "servicio": "Chequeo",
+      "tarifa": 5.188345441262499
+    },
+    {
+      "categoria": "Desodorantes",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.0
+    },
+    {
+      "categoria": "Desodorantes",
+      "servicio": "Chequeo",
+      "tarifa": 5.188345441262499
+    },
+    {
+      "categoria": "Detergentes",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.21
+    },
+    {
+      "categoria": "Detergentes",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.9486041
+    },
+    {
+      "categoria": "Detergentes",
+      "servicio": "Chequeo",
+      "tarifa": 5.506498699453124
+    },
+    {
+      "categoria": "Detergentes",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 17.0
+    },
+    {
+      "categoria": "Detergentes",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 21.25
+    },
+    {
+      "categoria": "Detergentes Adic",
+      "servicio": "Audit Consumo",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Embutidos",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.18
+    },
+    {
+      "categoria": "Embutidos",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 19.108731881249998
+    },
+    {
+      "categoria": "Embutidos",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 23.885914851562497
+    },
+    {
+      "categoria": "Encuesta Bodegas",
+      "servicio": "Audit Consumo",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Encuesta Bodegas",
+      "servicio": "Audit Insumos",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Encuesta Bodegas",
+      "servicio": "Chequeo",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Encuesta Bodegas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Encuesta Bodegas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Encuesta Bodegas",
+      "servicio": "Chequeo Insumos",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Encuesta Bodegas",
+      "servicio": "Check",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Energizantes",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Fideos",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.21
+    },
+    {
+      "categoria": "Fideos",
+      "servicio": "Chequeo",
+      "tarifa": 5.506498699453124
+    },
+    {
+      "categoria": "Fideos",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 18.0
+    },
+    {
+      "categoria": "Fideos",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 22.5
+    },
+    {
+      "categoria": "FS-PREGUNTAS VARIAS BONIF",
+      "servicio": "Audit Insumos",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Fudge",
+      "servicio": "Chequeo Insumos",
+      "tarifa": 3.795
+    },
+    {
+      "categoria": "Galletas",
+      "servicio": "Audit Consumo",
+      "tarifa": 8.24
+    },
+    {
+      "categoria": "Galletas",
+      "servicio": "Chequeo",
+      "tarifa": 5.82465195764375
+    },
+    {
+      "categoria": "Galletas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 19.305013806787496
+    },
+    {
+      "categoria": "Galletas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 24.13126725848437
+    },
+    {
+      "categoria": "Gaseosas",
+      "servicio": "Audit Consumo",
+      "tarifa": 8.24
+    },
+    {
+      "categoria": "Gaseosas",
+      "servicio": "Chequeo",
+      "tarifa": 7.3638241231715975
+    },
+    {
+      "categoria": "Golosinas",
+      "servicio": "Audit Consumo",
+      "tarifa": 9.7
+    },
+    {
+      "categoria": "Golosinas",
+      "servicio": "Check",
+      "tarifa": 3.7595
+    },
+    {
+      "categoria": "Hair Care",
+      "servicio": "Audit Consumo",
+      "tarifa": 8.24
+    },
+    {
+      "categoria": "Hair Care",
+      "servicio": "Chequeo",
+      "tarifa": 5.827531172649999
+    },
+    {
+      "categoria": "Hair Care",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 39.0
+    },
+    {
+      "categoria": "Hair Care",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 48.75
+    },
+    {
+      "categoria": "Harinas Industriales",
+      "servicio": "Audit Insumos",
+      "tarifa": 14.138868857142857
+    },
+    {
+      "categoria": "Helados",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 16.377435493495312
+    },
+    {
+      "categoria": "Helados",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 20.471794366869137
+    },
+    {
+      "categoria": "Huevos",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.0
+    },
+    {
+      "categoria": "Insecticidas",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.0
+    },
+    {
+      "categoria": "Insecticidas",
+      "servicio": "Chequeo",
+      "tarifa": 4.870192183071875
+    },
+    {
+      "categoria": "Isotonicas",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.0
+    },
+    {
+      "categoria": "Jabón de Lavar",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Jabón de Lavar",
+      "servicio": "Chequeo",
+      "tarifa": 4.870192183071875
+    },
+    {
+      "categoria": "Jabón de Lavar",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 10.0
+    },
+    {
+      "categoria": "Jabón de Lavar",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 12.5
+    },
+    {
+      "categoria": "Jabón de Tocador",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.0
+    },
+    {
+      "categoria": "Jabón de Tocador",
+      "servicio": "Chequeo",
+      "tarifa": 5.82465195764375
+    },
+    {
+      "categoria": "Jugos Y Néctar",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 15.69513317625
+    },
+    {
+      "categoria": "Jugos Y Néctar",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 19.6189164703125
+    },
+    {
+      "categoria": "Lavavajillas",
+      "servicio": "Chequeo",
+      "tarifa": 5.19
+    },
+    {
+      "categoria": "Leche Condensada",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 10.463422117499999
+    },
+    {
+      "categoria": "Leche Condensada",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 13.079277646875
+    },
+    {
+      "categoria": "Leches",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.3
+    },
+    {
+      "categoria": "Leches",
+      "servicio": "Chequeo",
+      "tarifa": 5.506498699453124
+    },
+    {
+      "categoria": "Leches",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 15.69513317625
+    },
+    {
+      "categoria": "Leches",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 19.6189164703125
+    },
+    {
+      "categoria": "Leches Condensadas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 10.463422117499999
+    },
+    {
+      "categoria": "Leches Condensadas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 13.079277646875
+    },
+    {
+      "categoria": "Leches Culinarias",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Leches Evaporadas + Polvo",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 15.69513317625
+    },
+    {
+      "categoria": "Leches Evaporadas + Polvo",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 19.6189164703125
+    },
+    {
+      "categoria": "Lejías",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.21
+    },
+    {
+      "categoria": "Lejías",
+      "servicio": "Chequeo",
+      "tarifa": 4.870192183071875
+    },
+    {
+      "categoria": "Limpiadores",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.0
+    },
+    {
+      "categoria": "Limpiadores",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.9486041
+    },
+    {
+      "categoria": "Limpiadores",
+      "servicio": "Chequeo",
+      "tarifa": 4.870192183071875
+    },
+    {
+      "categoria": "Manjar Blanco",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.9486041
+    },
+    {
+      "categoria": "Manjar Blanco",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 10.463422117499999
+    },
+    {
+      "categoria": "Manjar Blanco",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 13.079277646875
+    },
+    {
+      "categoria": "Mantecas Industriales",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.95
+    },
+    {
+      "categoria": "Maquinas de Afeitar + Repuestos",
+      "servicio": "Audit Consumo",
+      "tarifa": 9.27
+    },
+    {
+      "categoria": "Margarinas Industriales",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.9486041
+    },
+    {
+      "categoria": "Margarinas y Mantequillas",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.3
+    },
+    {
+      "categoria": "Margarinas y Mantequillas",
+      "servicio": "Chequeo",
+      "tarifa": 5.19
+    },
+    {
+      "categoria": "Margarinas y Mantequillas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 14.53253071875
+    },
+    {
+      "categoria": "Margarinas y Mantequillas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 18.1656633984375
+    },
+    {
+      "categoria": "Mayonesas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 12.0
+    },
+    {
+      "categoria": "Mayonesas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 15.0
+    },
+    {
+      "categoria": "Mermelada",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 15.69513317625
+    },
+    {
+      "categoria": "Mermelada",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 19.6189164703125
+    },
+    {
+      "categoria": "Mermeladas",
+      "servicio": "Audit Consumo",
+      "tarifa": 4.5
+    },
+    {
+      "categoria": "Modificadores",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.0
+    },
+    {
+      "categoria": "Modificadores Y Cocoas",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.0
+    },
+    {
+      "categoria": "Modificadores Y Cocoas",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 9.940251011625
+    },
+    {
+      "categoria": "Modificadores Y Cocoas",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 12.42531376453125
+    },
+    {
+      "categoria": "Panes Industriales (inc Tostadas y Rapiditas)",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.18
+    },
+    {
+      "categoria": "Panetones",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.0
+    },
+    {
+      "categoria": "Panetones",
+      "servicio": "Chequeo",
+      "tarifa": 4.870192183071875
+    },
+    {
+      "categoria": "Panetones",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 11.509764329249998
+    },
+    {
+      "categoria": "Panetones",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 14.3872054115625
+    },
+    {
+      "categoria": "PANI-PREGUNTAS VARIAS BONIF",
+      "servicio": "Audit Insumos",
+      "tarifa": 0.0
+    },
+    {
+      "categoria": "Pañal Bebes",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.5
+    },
+    {
+      "categoria": "Papel Higienico",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.5
+    },
+    {
+      "categoria": "Papel Higienico",
+      "servicio": "Chequeo",
+      "tarifa": 5.188345441262499
+    },
+    {
+      "categoria": "Papel Higienico",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 15.69513317625
+    },
+    {
+      "categoria": "Papel Higienico",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 19.6189164703125
+    },
+    {
+      "categoria": "Papel Toalla",
+      "servicio": "Audit Consumo",
+      "tarifa": 4.5
+    },
+    {
+      "categoria": "Papel Toalla",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 14.53253071875
+    },
+    {
+      "categoria": "Papel Toalla",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 18.1656633984375
+    },
+    {
+      "categoria": "Petfood",
+      "servicio": "Audit Consumo",
+      "tarifa": 8.24
+    },
+    {
+      "categoria": "Petfood",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 19.381788421874997
+    },
+    {
+      "categoria": "Petfood",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 24.227235527343748
+    },
+    {
+      "categoria": "Postres",
+      "servicio": "Chequeo",
+      "tarifa": 5.19
+    },
+    {
+      "categoria": "Premezclas",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.9486041
+    },
+    {
+      "categoria": "Proteccion Femenina",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.5
+    },
+    {
+      "categoria": "Quesos",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.3
+    },
+    {
+      "categoria": "Quesos",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 20.926844234999997
+    },
+    {
+      "categoria": "Quesos",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 26.15855529375
+    },
+    {
+      "categoria": "Quitamanchas",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Quitamanchas",
+      "servicio": "Chequeo",
+      "tarifa": 4.870192183071875
+    },
+    {
+      "categoria": "Refrescos",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 15.69513317625
+    },
+    {
+      "categoria": "Refrescos",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 19.6189164703125
+    },
+    {
+      "categoria": "Refrescos en Polvo",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.0
+    },
+    {
+      "categoria": "Refrescos en Polvo",
+      "servicio": "Chequeo",
+      "tarifa": 5.188345441262499
+    },
+    {
+      "categoria": "Ron y Pisco",
+      "servicio": "Audit Consumo",
+      "tarifa": 14.42
+    },
+    {
+      "categoria": "Rtd",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 10.463422117499999
+    },
+    {
+      "categoria": "Rtd",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 13.079277646875
+    },
+    {
+      "categoria": "Sal",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Salsas Frías",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Salsas Frías",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.95
+    },
+    {
+      "categoria": "Salsas Frías",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 16.0
+    },
+    {
+      "categoria": "Salsas Frías",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 20.0
+    },
+    {
+      "categoria": "Salsas Frías Industriales",
+      "servicio": "Audit Insumos",
+      "tarifa": 4.95
+    },
+    {
+      "categoria": "Shampoo",
+      "servicio": "Audit Consumo",
+      "tarifa": 7.21
+    },
+    {
+      "categoria": "Suavizantes",
+      "servicio": "Audit Consumo",
+      "tarifa": 5.15
+    },
+    {
+      "categoria": "Suavizantes",
+      "servicio": "Chequeo",
+      "tarifa": 4.870192183071875
+    },
+    {
+      "categoria": "Varios Skus Bodegas",
+      "servicio": "Check",
+      "tarifa": 0.268
+    },
+    {
+      "categoria": "Varios Skus Puestos De Mercado",
+      "servicio": "Check",
+      "tarifa": 0.412
+    },
+    {
+      "categoria": "Yogurt",
+      "servicio": "Audit Consumo",
+      "tarifa": 6.3
+    },
+    {
+      "categoria": "Yogurt",
+      "servicio": "Exhibicion Lima",
+      "tarifa": 19.305013806787496
+    },
+    {
+      "categoria": "Yogurt",
+      "servicio": "Exhibicion Provincias",
+      "tarifa": 24.13126725848437
+    }
+  ],
+  "factoresFrecuencia": [
+    {
+      "servicio": "Audit Consumo",
+      "frecuencia": "Sistematico",
+      "entrega": "Mensual",
+      "factor": 1.0
+    },
+    {
+      "servicio": "Audit Insumos",
+      "frecuencia": "One Shot",
+      "entrega": "Bimestral",
+      "factor": 1.5
+    },
+    {
+      "servicio": "Chequeo",
+      "frecuencia": "Back Data",
+      "entrega": "Trimestral",
+      "factor": 1.75
+    },
+    {
+      "servicio": "EXHIBICIÓN",
+      "frecuencia": null,
+      "entrega": "Cuatrimestral",
+      "factor": 2.25
+    },
+    {
+      "servicio": "Check",
+      "frecuencia": null,
+      "entrega": "Semestral",
+      "factor": 6.0
+    },
+    {
+      "servicio": "Chequeo Insumos",
+      "frecuencia": null,
+      "entrega": "1 Año",
+      "factor": 9.600000000000001
+    },
+    {
+      "servicio": "Back Data Audit Consumo",
+      "frecuencia": null,
+      "entrega": "2 Años",
+      "factor": 1.5
+    },
+    {
+      "servicio": "Back Data Audit Insumos",
+      "frecuencia": null,
+      "entrega": null,
+      "factor": 3.0
+    }
+  ],
+  "ciudades": [
+    {
+      "ciudad": "LIMA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "AREQUIPA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "AYACUCHO",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "CAJAMARCA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "CHICLAYO",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "CHIMBOTE",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "CUSCO",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "HUANCAYO",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "HUANUCO",
+      "factor": 1.2
+    },
+    {
+      "ciudad": "ICA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "IQUITOS",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "NORTE CHICO",
+      "factor": 1.4
+    },
+    {
+      "ciudad": "PIURA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "PUCALLPA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "SUR CHICO",
+      "factor": 1.4
+    },
+    {
+      "ciudad": "TACNA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "TARAPOTO",
+      "factor": 1.2
+    },
+    {
+      "ciudad": "TRUJILLO",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "PUNO",
+      "factor": 1.2
+    },
+    {
+      "ciudad": "JULIACA",
+      "factor": 1.2
+    },
+    {
+      "ciudad": "SUR CHICO (AUDIT)",
+      "factor": 1.4
+    },
+    {
+      "ciudad": "SULLANA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "TUMBES",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "MOQUEGUA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "PAITA",
+      "factor": 1.0
+    },
+    {
+      "ciudad": "BELLAVISTA",
+      "factor": 3.5101381991593
+    },
+    {
+      "ciudad": "JUANJUI",
+      "factor": 3.14067406367977
+    },
+    {
+      "ciudad": "MOYOBAMBA",
+      "factor": 3.37964303920534
+    },
+    {
+      "ciudad": "NUEVA CAJAMARCA",
+      "factor": 3.1356888667533
+    },
+    {
+      "ciudad": "YURIMAGUAS",
+      "factor": 3.31077336540183
+    }
+  ]
+}
