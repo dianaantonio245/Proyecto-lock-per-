@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -12,8 +13,6 @@ body{
     font-family:Arial, sans-serif;
     background:#EEF2F7;
 }
-
-/* LOGIN */
 
 #login{
     height:100vh;
@@ -36,18 +35,13 @@ body{
     margin-bottom:20px;
 }
 
-input{
+input, select{
     width:100%;
     padding:12px;
     margin-top:12px;
     border:1px solid #D1D5DB;
     border-radius:10px;
     box-sizing:border-box;
-}
-
-input:focus{
-    outline:none;
-    border-color:#0F2544;
 }
 
 button{
@@ -59,11 +53,6 @@ button{
     border:none;
     border-radius:10px;
     cursor:pointer;
-    font-size:15px;
-}
-
-button:hover{
-    background:#173763;
 }
 
 #error{
@@ -71,8 +60,6 @@ button:hover{
     display:none;
     margin-top:10px;
 }
-
-/* APP */
 
 #app{
     display:none;
@@ -110,20 +97,30 @@ header{
     margin-bottom:20px;
 }
 
-.bienvenida h2{
-    color:#0F2544;
-    margin-top:0;
-}
-
 .opcion{
     display:block;
     margin-top:15px;
-    font-size:18px;
 }
 
 .opcion input{
     width:auto;
     margin-right:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#0F2544;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:6px;
 }
 
 </style>
@@ -132,119 +129,138 @@ header{
 
 <body>
 
-<!-- LOGIN -->
 <div id="login">
-
     <div class="card">
 
-        <img src="Logo Lock d&n fase 1 7.png" class="logo">
+```
+    <img src="Logo Lock d&n fase 1 7.png" class="logo">
 
-        <h2>LOCK Cotizaciones</h2>
+    <h2>LOCK Cotizaciones</h2>
 
-        <input
-            type="email"
-            id="email"
-            placeholder="nombre@dichter-neira.com">
+    <input
+        type="email"
+        id="email"
+        placeholder="nombre@dichter-neira.com">
 
-        <button onclick="login()">
-            Ingresar
-        </button>
+    <button onclick="login()">
+        Ingresar
+    </button>
 
-        <div id="error">
-            Solo correos @dichter-neira.com
-        </div>
+    <div id="error">
+        Solo correos @dichter-neira.com
+    </div>
 
+</div>
+```
+
+</div>
+
+<div id="app">
+
+<header>
+
+```
+<div class="header-left">
+
+    <img src="Logo Lock d&n fase 1 7.png"
+         class="logo-header">
+
+    <div>
+        <h1>LOCK Cotizaciones</h1>
+        <p>Dichter & Neira</p>
     </div>
 
 </div>
 
-<!-- APP -->
-<div id="app">
+<div id="user"></div>
+```
 
-    <header>
+</header>
 
-        <div class="header-left">
+<div class="main">
 
-            <img src="Logo Lock d&n fase 1 7.png"
-                 class="logo-header">
+<div class="bienvenida">
 
-            <div>
-                <h1>LOCK Cotizaciones</h1>
-                <p>Dichter & Neira</p>
-            </div>
+<h2>Seleccione la metodología</h2>
 
-        </div>
+<label class="opcion">
+<input
+type="radio"
+name="metodologia"
+value="retail"
+onchange="cambiarMetodologia()">
+Retail
+</label>
 
-        <div id="user"></div>
+<label class="opcion">
+<input
+type="radio"
+name="metodologia"
+value="tradicional"
+onchange="cambiarMetodologia()">
+Tradicional
+</label>
 
-    </header>
+</div>
 
-    <div class="main">
+<div id="retail-form"
+     class="bienvenida"
+     style="display:none;">
 
-        <!-- Selección -->
-        <div class="bienvenida">
+```
+<h2>Cotizador Retail</h2>
 
-            <h2>Seleccione la metodología</h2>
+<p>Retail en construcción.</p>
+```
 
-            <label class="opcion">
+</div>
 
-                <input
-                    type="radio"
-                    name="metodologia"
-                    value="retail"
-                    onchange="cambiarMetodologia()">
+<div id="tradicional-form"
+     class="bienvenida"
+     style="display:none;">
 
-                Retail
+```
+<h2>Cotizador Tradicional</h2>
 
-            </label>
+<table>
 
-            <label class="opcion">
+    <thead>
 
-                <input
-                    type="radio"
-                    name="metodologia"
-                    value="tradicional"
-                    onchange="cambiarMetodologia()">
+        <tr>
 
-                Tradicional
+            <th>Categoría</th>
+            <th>Servicio</th>
+            <th>Frecuencia</th>
+            <th>Entrega</th>
+            <th>Ciudad</th>
+            <th>PDV</th>
 
-            </label>
+        </tr>
 
-        </div>
+    </thead>
 
-        <!-- Retail -->
-        <div id="retail-form"
-             class="bienvenida"
-             style="display:none;">
+    <tbody id="tablaTradicional"></tbody>
 
-            <h2>Cotizador Retail</h2>
+</table>
 
-            <p>
-                Aquí construiremos la tabla Retail
-                igual al Excel.
-            </p>
+<button
+    style="width:auto;"
+    onclick="agregarLineaTradicional()">
 
-        </div>
+    + Agregar Línea
 
-        <!-- Tradicional -->
-        <div id="tradicional-form"
-             class="bienvenida"
-             style="display:none;">
+</button>
+```
 
-            <h2>Cotizador Tradicional</h2>
+</div>
 
-            <p>
-                Aquí construiremos el formulario
-                Tradicional igual al Excel.
-            </p>
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
 <script>
+
+let tradicionalData = {};
 
 function login(){
 
@@ -257,7 +273,7 @@ function login(){
     if(!email.endsWith("@dichter-neira.com")){
 
         document.getElementById("error")
-        .style.display = "block";
+            .style.display="block";
 
         return;
     }
@@ -270,26 +286,42 @@ function login(){
 function mostrarApp(usuario){
 
     document.getElementById("login")
-        .style.display = "none";
+        .style.display="none";
 
     document.getElementById("app")
-        .style.display = "block";
+        .style.display="block";
 
     document.getElementById("user")
-        .innerText = usuario;
+        .innerText=usuario;
 }
 
-window.onload = () => {
+window.onload=()=>{
 
-    const user = localStorage.getItem("user");
+    const user =
+        localStorage.getItem("user");
 
-    if(user &&
-       user.endsWith("@dichter-neira.com")){
-
+    if(
+        user &&
+        user.endsWith("@dichter-neira.com")
+    ){
         mostrarApp(user);
     }
-
 };
+
+async function cargarTradicional(){
+
+    const response =
+        await fetch("tradicional.json");
+
+    tradicionalData =
+        await response.json();
+
+    document.getElementById(
+        "tablaTradicional"
+    ).innerHTML="";
+
+    agregarLineaTradicional();
+}
 
 function cambiarMetodologia(){
 
@@ -299,24 +331,99 @@ function cambiarMetodologia(){
         ).value;
 
     document.getElementById("retail-form")
-        .style.display = "none";
+        .style.display="none";
 
     document.getElementById("tradicional-form")
-        .style.display = "none";
+        .style.display="none";
 
-    if(metodologia === "retail"){
+    if(metodologia==="retail"){
 
         document.getElementById("retail-form")
-            .style.display = "block";
-
+            .style.display="block";
     }
 
-    if(metodologia === "tradicional"){
+    if(metodologia==="tradicional"){
 
         document.getElementById("tradicional-form")
-            .style.display = "block";
+            .style.display="block";
 
+        cargarTradicional();
     }
+}
+
+function agregarLineaTradicional(){
+
+    if(!tradicionalData.tarifario){
+        return;
+    }
+
+    const categorias =
+        [...new Set(
+            tradicionalData.tarifario
+            .map(x=>x.categoria)
+        )];
+
+    let opciones="";
+
+    categorias.forEach(cat=>{
+
+        opciones += `
+        <option value="${cat}">
+            ${cat}
+        </option>`;
+    });
+
+    const fila = `
+
+    <tr>
+
+        <td>
+            <select>
+                <option>Seleccione</option>
+                ${opciones}
+            </select>
+        </td>
+
+        <td>
+            <select>
+                <option>Servicio</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+                <option>Frecuencia</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+                <option>Entrega</option>
+            </select>
+        </td>
+
+        <td>
+            <select>
+                <option>Ciudad</option>
+            </select>
+        </td>
+
+        <td>
+            <input
+                type="number"
+                value="1"
+                min="1">
+        </td>
+
+    </tr>
+    `;
+
+    document
+        .getElementById("tablaTradicional")
+        .insertAdjacentHTML(
+            "beforeend",
+            fila
+        );
 }
 
 </script>
